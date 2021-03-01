@@ -67,6 +67,9 @@
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
+<!--一言设置：位于页面底部-->
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+
 <body>
   <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
@@ -229,23 +232,21 @@
                 
                 
               </div>
-              
-                <p class="note note-warning">
-                  
-                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
-                  
-                </p>
-              
+			  
+			 
+			 
+			 
+			  <p class="note note-warning">
+			<strong>本文作者: </strong><a href="/">xilou37</a> <br>
+			<strong>本文链接: </strong><a href="http://example.com/2021/02/27/hello-world/">http://example.com/2021/02/27/hello-world/</a> <br>
+			<strong>版权声明: </strong>本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+				</p>
+				
+			  
               
                 <div class="post-prevnext">
                   <article class="post-prev col-6">
                     
-                    
-                      <a href="/2021/03/01/SpringBoot%E5%90%AF%E5%8A%A8/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">[object Object]</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
                     
                   </article>
                   <article class="post-next col-6">
@@ -263,23 +264,24 @@
                   
                 
                 
-  <div class="disqus" style="width:100%">
-    <div id="disqus_thread"></div>
-    <script>
-      Fluid.utils.waitElementVisible('disqus_thread', function() {
-        Fluid.utils.createCssLink('https://cdn.jsdelivr.net/npm/disqusjs@1.0/dist/disqusjs.css');
-        Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/disqusjs@1.0/dist/disqus.js', function () {
-          new DisqusJS({
-            shortname: 'fluid',
-            apikey: ''
-          });
+  <div id="SOHUCS" sid='http://example.com/2021/02/27/hello-world/'></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('SOHUCS', function() {
+      var appid = 'cyvkEG7so';
+      var conf = 'f4d554ba22f84cdaa3aa230624873b02';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+      } else {
+        Fluid.utils.createScript("https://changyan.sohu.com/upload/changyan.js", function() {
+          window.changyan.api.config({
+            appid: appid,
+            conf: conf
+          })
         });
-      });
-    </script>
-    <noscript>Please enable JavaScript to view the
-      <a target="_blank" href="https://disqus.com/?ref_noscript" rel="nofollow noopener noopener">comments powered by Disqus.</a>
-    </noscript>
-  </div>
+      }
+    })
+  </script>
 
 
               </article>
@@ -343,6 +345,11 @@
 
     
   </main>
+  
+  <!--动态线条背景-->
+<script type="text/javascript"
+    color="140,140,140" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
 
   <footer class="text-center mt-5 py-3">
   <div class="footer-content">
@@ -353,6 +360,10 @@
   
 
   
+
+<!-- 一言的位置 -->
+<p id="hitokoto">:D 获取中...</p>
+
 </footer>
 
 <!-- SCRIPTS -->
