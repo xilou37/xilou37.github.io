@@ -4,13 +4,19 @@
   
   
   <entry>
-    <title>java基础</title>
-    <link href="/2021/02/28/java%E5%9F%BA%E7%A1%80/"/>
-    <url>/2021/02/28/java%E5%9F%BA%E7%A1%80/</url>
+    <title>[object Object]</title>
+    <link href="/2021/03/01/SpringBoot%E5%90%AF%E5%8A%A8/"/>
+    <url>/2021/03/01/SpringBoot%E5%90%AF%E5%8A%A8/</url>
     
-    <content type="html"><![CDATA[<p>hello java</p>]]></content>
+    <content type="html"><![CDATA[<p>02、SpringBoot2入门<br>1、系统要求<br>• Java 8 &amp; 兼容java14 .<br>• Maven 3.3+<br>• idea 2019.1.2<br>1.1、maven设置<br><mirrors><br>      <mirror><br>        <id>nexus-aliyun</id><br>        <mirrorOf>central</mirrorOf><br>        <name>Nexus aliyun</name><br>        <url><a href="http://maven.aliyun.com/nexus/content/groups/public">http://maven.aliyun.com/nexus/content/groups/public</a></url><br>      </mirror><br>  </mirrors></p>  <profiles>         <profile>              <id>jdk-1.8</id>              <activation>                <activeByDefault>true</activeByDefault>                <jdk>1.8</jdk>              </activation>              <properties>                <maven.compiler.source>1.8</maven.compiler.source>                <maven.compiler.target>1.8</maven.compiler.target>                <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>              </properties>         </profile>  </profiles>2、HelloWorld需求：浏览发送/hello请求，响应 Hello，Spring Boot 2 2.1、创建maven工程2.2、引入依赖<parent>        <groupId>org.springframework.boot</groupId>        <artifactId>spring-boot-starter-parent</artifactId>        <version>2.3.4.RELEASE</version>    </parent>    <dependencies>        <dependency>            <groupId>org.springframework.boot</groupId>            <artifactId>spring-boot-starter-web</artifactId>        </dependency>    </dependencies>2.3、创建主程序/** * 主程序类 * @SpringBootApplication：这是一个SpringBoot应用 */@SpringBootApplicationpublic class MainApplication {    public static void main(String[] args) {        SpringApplication.run(MainApplication.class,args);    }}2.4、编写业务@RestControllerpublic class HelloController {    @RequestMapping("/hello")    public String handle01(){        return "Hello, Spring Boot 2!";    }}2.5、测试直接运行main方法2.6、简化配置application.propertiesserver.port=88882.7、简化部署 <build>        <plugins>            <plugin>                <groupId>org.springframework.boot</groupId>                <artifactId>spring-boot-maven-plugin</artifactId>            </plugin>        </plugins>    </build>把项目打成jar包，直接在目标服务器执行即可。注意点：• 取消掉cmd的快速编辑模式]]></content>
     
     
+    
+    <tags>
+      
+      <tag>SpringBoot</tag>
+      
+    </tags>
     
   </entry>
   
