@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>VScode终端填坑</title>
+    <link href="/2021/03/03/VScode%E7%BB%88%E7%AB%AF%E5%A1%AB%E5%9D%91/"/>
+    <url>/2021/03/03/VScode%E7%BB%88%E7%AB%AF%E5%A1%AB%E5%9D%91/</url>
+    
+    <content type="html"><![CDATA[<h2 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h2><ul><li>使用PowerShell时报错：此系统禁止运行脚本<br><img src="https://i.loli.net/2021/03/03/ZUbRfrJay52N1Qg.png" alt="报错样图"></li></ul><hr><h2 id="快速解决方法"><a href="#快速解决方法" class="headerlink" title="快速解决方法:"></a>快速解决方法:</h2><ul><li>在VS code的PowerShell终端输入以下命令即可<figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell">Set-ExecutionPolicy RemoteSigned<br></code></pre></div></td></tr></table></figure></li><li>详细解决方案参考<a href="https://go.microsoft.com/fwlink/?LinkID=135170">这里</a></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>VScode PowerShell</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
